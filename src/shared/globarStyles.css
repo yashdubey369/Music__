@@ -1,0 +1,23 @@
+.screen-container{
+    width: 100%;
+    height: 100dvh ;
+    /* background-color: #bd0000; */
+    background-image: url(https://th.bing.com/th/id/OIP.u4LFv-zBiPpoaY0sX7d6kAHaE8?pid=ImgDet&rs=1);
+    border-radius: 10px;
+    padding-left: 120px;
+}
+.right-container{
+    width:  94%;
+    height: 89%;
+    padding: 2%;
+    display: flex;
+    border-radius: 30px;
+    border-style: groove;
+    border-color: #b5c7e476;
+    margin: .6% .6%;
+    backdrop-filter: blur(8px);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.614), 0 6px 20px rgba(0, 0, 0, 0.277);
+}
+.flex {
+    display: flex;
+  }

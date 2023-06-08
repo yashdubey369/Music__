@@ -1,0 +1,96 @@
+.library-body {
+    flex-wrap:wrap;
+    overflow-y: auto;
+    justify-content:center; 
+    gap: 3%;
+    background: #000;
+    border-radius: 30px;
+    /* background-color: rgba(255, 255, 255, 0);   */
+    background: linear-gradient(75deg,
+            rgba(54, 69, 98, 0) 0%,
+            rgba(40, 58, 88, 0) 100%);
+    backdrop-filter: blur(5px); 
+    scroll-behavior: smooth;
+     
+}
+.library-body::-webkit-scrollbar{
+    display: none;
+}
+
+.playlist-card {
+
+    position: relative;
+    width: 18%;
+    height: 45%;
+    background-color: rgb(30, 42, 62);
+    padding: 1.5%;
+    margin-bottom: 2%;
+    /* background: rgb(30, 42, 62); */
+    /* background: linear-gradient(75deg,
+            rgba(73, 16, 104, 0.391) 0%,
+            rgba(21, 56, 126, 0.178) 100%); */
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-style: groove;
+    border-color: black;
+    border-radius: 30px;
+    background: #0000008f;
+    border-width: 3px;
+    /* backdrop-filter: blur(15px);     */
+
+}
+
+ .playlist-card:hover {
+    transform: scale(1.03);
+
+}
+
+.playlist-card:hover .playlist-fade {
+    opacity: 1;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.533);
+
+}
+ 
+.playlist-image {
+    width:90%;
+    height: 79%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+}
+ 
+.playlist-title {
+    font-weight: 800;
+    font-size: 16px;
+    color: #c4d0e3;
+    margin: 10px 0px 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.playlist-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
+    color: #c4d0e37c;
+}
+
+.playlist-fade {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 84%;
+    height:87%;
+    border-radius: 20px;
+    background: linear-gradient(180deg,
+            rgba(54, 69, 98, 0) 10%,
+            rgba(73, 16, 104, 0.391));
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8%;
+    transition: 0.5s ease;
+} 

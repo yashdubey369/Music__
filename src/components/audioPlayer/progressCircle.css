@@ -1,0 +1,31 @@
+circle {
+  transition: all 1s ease-in-out;
+  transform: rotate(93deg);
+  transform-origin: 50% 50%;
+}
+
+image.active {
+  animation: rotation 30s infinite linear;
+  transform-origin: 50% 50%;
+  
+}
+.progress-circle:hover{
+
+  transform: matrix(0,1,1,0,0,0);
+}
+
+.progress-circle {
+  justify-content: center;
+  transition: all 1s ease;
+  /* transform: matrix(0,1,1,0,0,0); */
+  align-items: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
