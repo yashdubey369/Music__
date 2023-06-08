@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "b1332b4158c040ca816ead67bda52e40";
-const redirectUri = "https://yasth-music-app.netlify.app/";
+const redirectUri = "http://yasth-music-app.netlify.app";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
